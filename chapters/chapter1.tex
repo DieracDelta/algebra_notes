@@ -1,0 +1,82 @@
+\section{Chapter 1}
+
+\begin{definition}[\bfseries Matrix]
+  A $m \times n$ matrix is a collection of $mn$ numbers arranged in a rectangle
+  like so:
+
+\[
+  \begin{bmatrix}
+    a_{11} & \cdots & a_{1n}\\
+    \ldots  & \cdots & \ldots \\
+    a_{m1} & \cdots & a_{mn}
+  \end{bmatrix}
+\]
+
+Matrix multiplication is distributive:
+
+\[A(B + B') = AB + AB',\quad (A + A')B = AB + A'B\]
+
+And associative:
+
+\[(AB)C=A(BC)\]
+
+But not communative: $AB\neq BA$. Note that this also works in exactly
+the same fashion with block matrices.
+
+\end{definition}
+
+\begin{definition}[\bfseries unit matrix]
+  $e_{ij}$ is 1 at entry $i,j$ and zero everywhere else.
+\end{definition}
+
+\begin{definition}[\bfseries elementary matrices]
+  There are three types of elementary $n \times n$ matrices:
+
+  (i) One nonzero off-diagonal entry is added to the identity matrix at (i,j).
+  In this case, EX adds $a$ of row j of X to row i. (draw it out)
+  (ii) The ith and jth diagonal entries of the identity matrix are replaced
+  with zeros and 1's are added in the $(i,j)$ and $(j,i)$ positions. In this case
+  when we have $EX$, we just swap rows i and j of X.
+  (iii) One diagonal entry of the identity matrix is replaced by a nonzero
+  scalar c. $EX$ simply scales up row i by (a).
+
+  All elementary matrices are invertible. Their inverses are also elementary
+  matrices.
+\end{definition}
+
+\begin{definition}[\bfseries Row Echelon matrix]
+  A row echelon matrix, $M$ has the following properties:
+  \begin{itemize}
+    \item if row $i$ of M is zero, then row j is zero $\forall j > i$
+    \item if row $i$ isn't zero, its first nonzero entry is 1. This is called a pivot
+    \item if row $i+1$ isn't zero, the pivot in row i+1 is to the right of the pivot
+      in row i.
+    \item The entries above and below a pivot are zero
+
+  \end{itemize}
+
+\end{definition}
+
+\begin{definition}[\bfseries Permutation]
+  A permutation is a mapping from a set to another set. The notation here is
+  new. Basically, suppose we have a set of numbers $\{1,2,3,4,5\}$. Then,
+  we have something that looks like this that represents $p$:
+  \[p = (341)(25)\]
+
+  This means that $3 \rightarrow 4$, $4 \rightarrow 1$, $1 \rightarrow 3$, etc.
+
+  Each group within parentheses is considered a $n$-cycle. $2$-cycles are
+  denoted transpositions. Note that when you have a permutation and elements
+  are not listed, they are implicitly identity. Each permutation has a
+  permutation matrix associated with it, which performs the permutation on
+  a matrix.
+
+  The inverse of a permutation matrix is its transpose.
+
+\end{definition}
+
+\begin{definition}[\bfseries random properties of invertible matrices]
+  \[\det (AB) = \det (A) \det (B)\]
+  \[\det (A^{-1}) = \det (A)\]
+
+\end{definition}

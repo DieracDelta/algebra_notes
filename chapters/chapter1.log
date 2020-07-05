@@ -1,0 +1,27 @@
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/NixOS.org) (preloaded format=pdflatex 2020.6.8)  11 JUN 2020 20:23
+entering extended mode
+ restricted \write18 enabled.
+ %&-line parsing enabled.
+**/home/jrestivo/maths/artin_algebra_notes/chapters/chapter1.tex
+(/home/jrestivo/maths/artin_algebra_notes/chapters/chapter1.tex
+LaTeX2e <2020-02-02> patch level 5
+L3 programming layer <2020-02-25>
+! Undefined control sequence.
+l.1 \section
+            {Chapter 1}
+? 
+! Emergency stop.
+l.1 \section
+            {Chapter 1}
+End of file on the terminal!
+
+ 
+Here is how much of TeX's memory you used:
+ 17 strings out of 482109
+ 544 string characters out of 5917504
+ 235100 words of memory out of 5000000
+ 15456 multiletter control sequences out of 15000+600000
+ 532338 words of font info for 24 fonts, out of 8000000 for 9000
+ 430 hyphenation exceptions out of 8191
+ 12i,0n,15p,113b,8s stack positions out of 5000i,500n,10000p,200000b,80000s
+!  ==> Fatal error occurred, no output PDF file produced!
