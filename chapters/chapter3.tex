@@ -2,19 +2,23 @@
 
 
 \begin{definition}[\bfseries subspace]
+
   a subset $W$ of $\mathbb{R}^{n}$ is a subspace if it is not empty,
-  $w_{1}\cdots, w_{n}$ are elements of $W$ and $c_{1}\cdoots c_{n}$ are scalars,
-  the linear combination $c_{1}w_{1}\codts + c_{n}w_{n}$ is also in $W$.
+  $w_{1}\cdots, w_{n}$ are elements of $W$ and $c_{1}\cdots c_{n}$ are scalars,
+  the linear combination $c_{1}w_{1}\cdots + c_{n}w_{n}$ is also in $W$.
   A subspace is \textbf{proper} if it is not trivial (${0}$) nor the entire
   $\mathbb{R}^{n}$.
 
 \end{definition}
 
 \begin{definition}[\bfseries nullspace]
+
   Subspace consisting of $\vec{x}$ that solve $AX=0$.
+
 \end{definition}
 
 \begin{definition}[\bfseries field]
+
   A field $F$ is a set together with two laws of composition,
   addition and multiplication which satisfy the following axioms:
   \begin{itemize}
@@ -36,13 +40,67 @@
 
 \end{definition}
 
+
 \begin{definition}[\bfseries prime field]
+
   For some prime p, the congruence classes define a field
 
-  \[\mathbb{F}_{p}={\bar{0},\cdots \bar{p-1}}=\mathbb{Z}/p\mathbb{Z}\]
+  \[\mathbb{F}_{p}=\{\bar{0},\cdots \overline{p-1}\}=\mathbb{Z}/p\mathbb{Z}\]
 
   The multiplicative group $\mathbb{F}_{p}^{\times}$ of the prime field is a
-  cyclic group of order $p-1$. (no proof provided). A generator for this cyclic
-  group is called a $\textbf{primitive root}$ modulo $p$.
+  cyclic group of order $p-1$. (no proof provided\ldots yet). A generator for this
+  cyclic group is called a $\textbf{primitive root}$ modulo $p$. This lets you generate
+  the entire gruop from this element $\alpha$. E.g.
+  \[\mathbb{F}_{p}^{\times}=\{1, 2,\ldots , p-1\}=\{1, \alpha, \ldots , \alpha^{{p-2}}\}\]
+
+\end{definition}
+
+
+\begin{definition}[\bfseries Cancellation law (prime field)]
+
+  I feel that this is rather obvious (and the proof is trivial), but im taking
+  note of it anyway. Let $p$ be a prime integer and let $\bar{a},\bar{b}$, and
+  $\bar{c}$ be elements of $\mathbb{F}_{p}$. Then:
+  \begin{itemize}
+      \item if $\bar{a}\bar{b}=\bar{0}$ then $\bar{a}$ or $\bar{b}$ is $\bar{0}$.
+      \item if $\bar{a}\neq \bar{0}$ and $\bar{a}\bar{b}=\bar{a}\bar{c}$, then
+      $\bar{b} = \bar{c}$.
+  \end{itemize}
+
+\end{definition}
+
+\begin{definition}[\bfseries Vector Space over a field]
+  A \textbf{vector space} $V$ over a field $F$ is a set together with two laws
+  of composition:
+  \begin{itemize}
+    \item addition: $V \times V \rightarrow V$, or for specific elements,
+      $v, w \rightsquigarrow v + w$.
+    \item scalar multiplication by elements of the field: $F \times V \rightarrow V$
+      , or for specific elements, $c, v \rightsquigarrow cv$, for $c$ in $F$ and
+      $v$ in $V$.
+  \end{itemize}
+
+  The following axioms hold:
+  \begin{itemize}
+    \item addition over $V$ is an abelian group with identity $0$
+    \item $1v = v \forall v \in V$
+    \item associativity: $(ab)v = a(bv)\forall a, b \in F \times F, v \in V$.
+    \item distributivity:
+      $(a+b)v = av + bv$, $a(v+w)=av + aw \forall a, b \in F \times F, v \in V$
+
+  \end{itemize}
+
+\end{definition}
+
+\begin{definition}[\bfseries Vector Subspace over a field]
+  Analagous to vector subspace. E.g. closed over addition and scalar
+  multiplication. Same idea as vector subspace being proper (not id or entire thing).
+\end{definition}
+
+\begin{definition}[\bfseries isomorphism between vector spaces over same field]
+  An isomorphism $\phi$ from a vector space $V$ to a vector space $V'$, both over
+  the same field, $F$, is a bijective map $V \rightarrow V'$ with two laws of composition:
+
+  \[\forall v,w \in V \times V, c \in F: \phi ( v + w ) = \phi (v) + \phi (w), \phi (cv) = c \phi (v)\]
 
 \end{definition}
