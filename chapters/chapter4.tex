@@ -1,0 +1,27 @@
+\section{Chapter 4}
+
+\begin{definition}[\bfseries linear transformation]
+  the linear transformation $T:V \rightarrow W$ from one vector space over a
+  field to another vector space over a field is a map that is compatible with addition and scalar multiplication:
+  \[T(v_{1 + v_{2 }}) = T(v_{1}) + T(v_{2})\]
+  \[T(cv_{1}) = cT(v_{1})\]
+  for all $v_{1},v_{2} \in V\times V, c \in F$
+
+  This gives us two things:
+  \begin{itemize}
+      \item $\ker T = \text{rank of T} = \{v \in V | T(v) = 0\}$
+      \item $\ima T = \text{nullspace of T} = \{w \in W | w = T(v), v \in V\}$
+  \end{itemize}
+  These are analagous (kind of) to the group homomorphism definitions.
+
+  We also get this result:
+  \[\dim (\ker T) + \dim (\ima T) = \dim V\]
+
+  This follows by a simple proof by contradiction. Intuition is identical to the
+  linalg identity.
+
+\end{definition}
+
+\begin{definition}[\bfseries commutative diagram]
+  you can get to the same result regardless of which way you go along the square
+\end{definition}

@@ -104,3 +104,113 @@
   \[\forall v,w \in V \times V, c \in F: \phi ( v + w ) = \phi (v) + \phi (w), \phi (cv) = c \phi (v)\]
 
 \end{definition}
+
+\begin{definition}[\bfseries Ordered Set]
+  denoted with parentheses instead of brackets. Order matters. Can include
+  duplicate elements. This ordered set (when it contains vectors) can span a
+  subspace.
+\end{definition}
+
+\begin{definition}[\bfseries Linear Combination]
+
+  Let $V$ be a vector space over a field $F$. Let $S$ be an ordered set of
+elements of $V$: $(v_{1},\ldots, v_{n})$ (denoted hypervector). A \textbf{linear
+combination} of $S$ is a vector of the form:
+  \[w = c_{1}v_{1}\ldots c_{n}v_{n}, c_{i} \in F\]
+
+\end{definition}
+
+\begin{definition}[\bfseries independence]
+
+  An ordered set of vectors, $S$, is \textbf{linearly independent} if there is
+no linear relation $SX = 0$ except for the trivial one. A set that is not
+independent is dependent.
+
+\end{definition}
+
+\begin{definition}[\bfseries Span]
+
+  Let $V$ be a subspace. $Span S$ is the smallest subspace of $V$ that contains
+  $S$.
+
+\end{definition}
+
+\begin{definition}{\bfseries basis}
+
+  The basis of a vector space $V$ is a set of vectors that is independent and
+  also spans $V$.
+
+  Standard basis of $F_{n}$ is the set $\textbf{E}=(e_{1}\ldots e_{n})$ ($e_{i}$
+is 1 in ith entry and 0 everywhere else).
+
+\end{definition}
+
+\begin{definition}{\bfseries dimension of basis}
+
+  The dimension of a finite-dimensional (e.g. finite) vector space $V$ is the
+  order of a basis in $V$.
+
+\end{definition}
+
+\begin{definition}[\bfseries a theorem\ldots]
+
+  Let $S$ and $L$ be finite subsets of a vector space $V$. Assume that $S$ spans
+  $V$ and that $L$ is independent. Then $S$ contains at least as many elements
+  as $L$ does: $|S| \geq |L|$.
+
+\end{definition}
+
+\begin{definition}[\bfseries Coordinate vector]
+
+  If we have some basis $\textbf{B} = (v_{1},\ldots v_{n})$ of vector space $V$
+  over field $F$, then the coordinates of some vector $v$ in the vector space is
+  characterized by the coordinate vector of $v$, X (a vector of scalars from
+  $F$), with respect to basis $\textbf{B}$:
+\[v = \textbf{B}X^{T}\]
+
+\end{definition}
+
+\begin{definition}[\bfseries basechange matrix]
+
+  We have two bases in the same vector space $V$: $\textbf{B} = (v_{1}, \ldots v_{n}),\textbf{B}'= (v_{1}'\ldots v_{n})$. We want to figure out how to go from $B$ to $B'$. Then for every element in $\textbf{B}'$:
+
+  \[v_{j}'=v_{1}p_{1j}+\ldots v_{n}p_{nj}\]
+
+  You can do this for all the elements in $B'$, then put them into the columns
+of a matrix ($v_{j}'$ is the jth column). This matrix, $P$, satisfies
+$\textbf{B'} = \textbf{B}P$ and is the basechange matrix.
+
+\end{definition}
+
+\begin{definition}[\bfseries Sum of Subspaces]
+  Also denoted span of subspaces. Analagous to span of a set of vectors. It's
+
+  the smallest subspace that contains all vectors in all subspaces.
+
+\end{definition}
+
+\begin{definition}[\bfseries Independence of vector subspaces]
+
+  Similar to independence in a set of vectors. If you can't make zero by adding
+  vectors up (except trivially), then are independent.
+
+\end{definition}
+
+\begin{definition}[\bfseries some subspace property]
+
+  Suppose we have $k$ subspaces of a vector space. Then:
+  \[\dim (W_{1}\ldots W_{k}) \leq dim W_{1} + \ldots + W_{k}\]
+
+  Intuitively, this is obvious, because the size of the bases are going to be
+  bigger when separated, and equal when they are independent.
+
+\end{definition}
+
+\begin{definition}[\bfseries direct sum]
+
+  Suppose we have $k$ subspaces of a vector space V: $W_{1}\ldots W_{k}$. Assume
+that the subspaces are independent of each other, and that their sum is equal to
+$V$ (in the sense that it spans it). Then, we say that $V$ is the direct sum of
+$W_{1}\ldots W_{k}$. We write $V$ as $V=W_{1}\oplus \ldots W_{k}$.
+
+\end{definition}
